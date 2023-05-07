@@ -1,0 +1,29 @@
+{
+  "name": "electron-test",
+  "version": "1.0.0",
+  "description": "test app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "Fevzi Atanoglu",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^24.2.0",
+    "electron-builder": "^23.6.0"
+  },
+  "build": {
+    "appId": "com.fevziatanoglu.gymapp",
+    "productName" : "Gym Uyari Sistemi",
+    "directories": {
+      "output": "build"
+    },
+    "icon" : "./assets/app-icon.png"
+  },
+  "win": {
+    "target": "nsis",
+    "icon" : "./assets/app-icon.png"
+  }
+}
